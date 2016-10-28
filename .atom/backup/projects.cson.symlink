@@ -1,0 +1,14 @@
+[
+  {
+    title: "antispam"
+    group: "lab"
+    paths: [
+      "/home/franz/work/gocode/src/stash.lvint.de/lab/antispam"
+      "/home/franz/work/gocode/src/stash.lvint.de/lab/events"
+    ]
+    icon: "icon-chevron-right"
+    settings: {}
+    devMode: false
+    template: null
+  }
+]

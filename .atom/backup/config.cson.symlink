@@ -1,0 +1,62 @@
+"*":
+  "atom-ctags": {}
+  "autocomplete-go":
+    snippetMode: "nameAndType"
+  "autocomplete-plus":
+    enableAutoActivation: false
+  "bracket-matcher":
+    autocompleteBrackets: false
+  core:
+    autoHideMenuBar: true
+    destroyEmptyPanes: false
+    disabledPackages: [
+      "symbols-view"
+      "minimap"
+      "minimap-autohide"
+      "minimap-bookmarks"
+      "minimap-find-and-replace"
+    ]
+    excludeVcsIgnoredPaths: false
+    themes: [
+      "atom-light-ui"
+      "atom-light-syntax"
+    ]
+  editor:
+    fontFamily: "Fira Code"
+    fontSize: 10
+    invisibles: {}
+    showInvisibles: true
+  "exception-reporting":
+    userId: "8218a901-0838-068f-edb5-a393bc8f4c72"
+  "formatter-clangformat":
+    a:
+      executablePath: "clang-format-3.7"
+  "git-log": {}
+  "go-outline":
+    parserExecutable: "/home/franz/work/outline/src/github.com/frairon/go-outline-parser/go-outline-parser"
+  "go-plus":
+    goInstallation: "/home/franz/golang"
+  linter:
+    errorPanelHeight: 228
+  "local-history": {}
+  minimap:
+    plugins:
+      bookmarks: true
+      "find-and-replace": true
+      "minimap-autohide": true
+      "minimap-hide": false
+  "navigation-history": {}
+  "open-recent":
+    listDirectoriesAddedToProject: true
+    replaceNewWindowOnOpenDirectory: false
+  "python-autopep8":
+    formatOnSave: true
+    maxLineLength: 120
+  "tool-bar":
+    visible: false
+  "tree-view":
+    hideIgnoredNames: true
+    hideVcsIgnoredFiles: true
+    squashDirectoryNames: true
+  welcome:
+    showOnStartup: false

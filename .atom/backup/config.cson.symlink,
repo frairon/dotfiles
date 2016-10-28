@@ -1,0 +1,25 @@
+{
+  "*": {
+    "core": {
+      "disabledPackages": [
+        "symbols-view"
+      ]
+    },
+    "exception-reporting": {
+      "userId": "53f5306d-b3ef-b804-5b38-b4b0dcb858c5"
+    },
+    "minimap": {
+      "plugins": {
+        "bookmarks": true,
+        "bookmarksDecorationsZIndex": 0,
+        "find-and-replace": true,
+        "find-and-replaceDecorationsZIndex": 0,
+        "minimap-autohide": true,
+        "minimap-autohideDecorationsZIndex": 0
+      }
+    },
+    "welcome": {
+      "showOnStartup": false
+    }
+  }
+}

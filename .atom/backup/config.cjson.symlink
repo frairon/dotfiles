@@ -1,0 +1,14 @@
+"*":
+  "exception-reporting":
+    userId: "4ebd8947-7c2b-423e-8ccd-a04fa2aea6de"
+  welcome:
+    showOnStartup: false
+  editor:
+    invisibles: {}
+    fontSize: 11
+  core:
+    themes: [
+      "one-light-ui"
+      "one-light-syntax"
+    ]
+  "go-plus": {}

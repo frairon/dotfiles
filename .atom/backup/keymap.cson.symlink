@@ -1,0 +1,20 @@
+'.platform-linux atom-text-editor':
+  'ctrl-d': 'editor:delete-line'
+  'ctrl-i': 'find-and-replace:select-next'
+
+'body':
+  'ctrl-k j': 'pane:split-down-and-copy-active-item'
+  'ctrl-k k': 'pane:split-up-and-copy-active-item'
+  'ctrl-k h': 'pane:split-left-and-copy-active-item'
+  'ctrl-k l': 'pane:split-right-and-copy-active-item'
+  'ctrl-k w': 'pane:close'
+  'ctrl-k ctrl-w': 'unset!'
+  'ctrl-k ctrl-k': 'window:focus-pane-above'
+  'ctrl-k ctrl-h': 'window:focus-pane-on-left'
+  'ctrl-k ctrl-l': 'window:focus-pane-on-right'
+  'ctrl-k ctrl-j': 'window:focus-pane-below'
+
+'atom-workspace atom-text-editor':
+  'ctrl-k ctrl-l': 'unset!'
+  'alt-left': 'last-cursor-position:previous'
+  'alt-right': 'last-cursor-position:next'
