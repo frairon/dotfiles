@@ -100,9 +100,6 @@ source ~/MASTER/system/scripts/bash
 PATH=$PATH:$HOME/bin:$HOME/.dotfiles/bin
 
 
-alias mdv='/home/franz/tools/terminal_markdown_viewer/mdv.py'
-
-
 function gitcfg(){
     if [ "$#" -lt "2" ] ; then
         echo "Usage: gitcfg <user> <email>"

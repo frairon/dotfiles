@@ -25,6 +25,13 @@ install-dev-packages:
 	sudo apt-get install --yes python-pip git-core fabric zeal
 	sudo pip install gkeyring
 
+mdv:
+	mkdir -p $$HOME/tools
+
+	sudo pip install markdown pygments pyyaml docopt
+	cd $$HOME/tools; ls terminal_markdown_viewer || git clone https://github.com/axiros/terminal_markdown_viewer.git
+	cd $$HOME/tools/terminal_markdown_viewer/; sudo python setup.py install
+
 remove-packages:
 	sudo apt-get install gnome-session-flashback
 	sudo apt-get purge --yes rhythmbox evolution
