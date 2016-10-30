@@ -7,12 +7,15 @@ source $HERE/../scripts/common.sh
 
 function setup(){
 	echo "$FOLDERNAME: Setting up..."
-
-  for file in $HERE/*; do
-    [[ $(basename $file) =~ setup.sh ]] && continue
+	for file in $HERE/bash.sh; do
     echo "Sourcing $file in bash"
-    check_append_to_file "$HOME/.bashrc" "source $file"
+    check_append_to_file "$HOME/.bashrc" "source $HERE/bash.sh"
   done
+
+	mkdir -p $HOME/golang
+	mkdir -p $HOME/golang-extras
+	success "Create golang default folders"
+
 }
 
 

@@ -1,10 +1,23 @@
+#!/bin/bash
 
+# This script contains common functions for setting up the dot files.
+
+ROOT_UID=0   # Root has $UID 0.
+
+if [ "$UID" -eq "$ROOT_UID" ]
+then
+  echo "You must not run this as root, otherwise the user customizations\
+  will not work. Installation commands etc. simply use sudo."
+  exit 1
+fi
+
+# Print passed argument with
 success () {
-  printf "\r\033[2K  [ \033[00;32mOK\033[0m ] $1\n"
+  printf "\r\033[2K  [ \033[00;32mOK\033[0m ] %s\n" $1
 }
 
 fail () {
-  printf "\r\033[2K  [\033[0;31mFAIL\033[0m] $1\n"
+  printf "\r\033[2K  [\033[0;31mFAIL\033[0m] %s\n" $1
   echo ''
   exit
 }
@@ -12,8 +25,8 @@ fail () {
 function link_file () {
   local src=$1 dst=$2
 
-  local overwrite= backup= skip=
-  local action=
+  local overwrite='' backup='' skip=''
+  local action=''
 
   if [ -f "$dst" -o -d "$dst" -o -L "$dst" ]
   then

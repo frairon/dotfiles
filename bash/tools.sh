@@ -16,7 +16,7 @@ esac
 alias cp='cp -i'
 
 # add home local paths to path
-export PATH=$PATH:$HOME/local/bin
+export PATH=$PATH:$HOME/local/bin:$HOME/dotfiles/bin
 export PYTHONPATH=$PYTHONPATH:$HOME/local/lib/python
 
 function grephere() {
@@ -81,7 +81,7 @@ function delthis(){
         case $yn in
             [Yy]* ) cd ..; rm -r $dir; break;;
             [Nn]* ) break;;
-            * ) echo "Please answer yes or no.";;
+            * ) echo "Please answer y or n.";;
         esac
     done
     echo "You are now in $PWD"
@@ -97,7 +97,7 @@ alias venv='source venv/bin/activate'
 source ~/workbash
 source ~/MASTER/system/scripts/bash
 
-PATH=$PATH:$HOME/bin
+PATH=$PATH:$HOME/bin:$HOME/.dotfiles/bin
 
 
 alias mdv='/home/franz/tools/terminal_markdown_viewer/mdv.py'

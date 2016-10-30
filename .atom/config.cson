@@ -1,4 +1,8 @@
 "*":
+  "bracket-matcher":
+    autocompleteBrackets: false
+    autocompleteSmartQuotes: false
+    wrapSelectionsInBrackets: false
   core:
     audioBeep: false
     destroyEmptyPanes: false
@@ -13,6 +17,7 @@
   editor:
     fontFamily: "Fira Code"
     fontSize: 11
+    showInvisibles: true
   "exception-reporting":
     userId: "53f5306d-b3ef-b804-5b38-b4b0dcb858c5"
   minimap:
