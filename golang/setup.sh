@@ -9,7 +9,12 @@ function setup(){
 	echo "$FOLDERNAME: Setting up..."
 	for file in $HERE/bash.sh; do
     echo "Sourcing $file in bash"
-    check_append_to_file "$HOME/.bashrc" "source $HERE/bash.sh"
+    check_append_to_file "$HOME/.bashrc" "source $file"
+  done
+
+	for file in $HERE/bash.sh; do
+    echo "Sourcing $file in .profile"
+    check_append_to_file "$HOME/.profile" "source $file"
   done
 
 	mkdir -p $HOME/golang

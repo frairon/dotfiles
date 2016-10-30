@@ -22,8 +22,10 @@ install-user-basics:
 
 
 install-dev-packages:
-	sudo apt-get install --yes python-pip git-core fabric zeal
+	sudo apt-get install --yes python-pip git-core fabric zeal hamster-applet hamster-indicator
 	sudo pip install gkeyring
+
+	$(info "The hamster-file is in .local/share/hamster-applet/. Link the database from dropbox or whatever")
 
 mdv:
 	mkdir -p $$HOME/tools
