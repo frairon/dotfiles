@@ -7,10 +7,10 @@ install:c
 
 setup: export CMD = setup
 setup:
-	.atom/setup.sh
-	bash/setup.sh
-	dropbox/setup.sh
-	golang/setup.sh
+	-.atom/setup.sh
+	-bash/setup.sh
+	-dropbox/setup.sh
+	-golang/setup.sh
 
 
 install-system-basics:
@@ -22,7 +22,7 @@ install-user-basics:
 
 
 install-dev-packages:
-	sudo apt-get install --yes python-pip git-core fabric
+	sudo apt-get install --yes python-pip git-core fabric zeal
 	sudo pip install gkeyring
 
 remove-packages:

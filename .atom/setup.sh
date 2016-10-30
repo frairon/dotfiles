@@ -12,6 +12,10 @@ function install(){
 }
 
 
+# to get a list of all installed packages, do
+# apm list -b -i -d
+
+
 function setup(){
 	echo "$FOLDERNAME: Setting up..."
 	mkdir -p $HOME/$FOLDERNAME
