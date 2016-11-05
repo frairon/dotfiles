@@ -1,0 +1,22 @@
+root = /home/franz/MASTER
+root = ssh://julie//home/julie/MASTER
+
+# do it fast even on vfat
+fastcheck = true
+pretendwin = true
+
+# for the moment no backups
+maxbackups = 0
+
+#perms = 0
+
+# ignore trash
+ignore = Path .Trash*
+ignore = Path Recycled
+ignore = Path System\ Volume\ Information
+ignore = Path {lost+found}
+
+# not used since it doesnt work anyway
+# ignore = Path */.svn
+# ignore = Path */.history
+
