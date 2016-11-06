@@ -73,8 +73,8 @@ function mdir(){
 
 # delete the current directory and move one upwards
 function delthis(){
-    allDir=$(dirname $(pwd))
-    dir=$(basename $(pwd))
+    allDir=$(dirname "$(pwd)")
+    dir=$(basename "$(pwd)")
 
     while true; do
         read -p "Sure to delete $allDir/$dir? (y/n)" yn
@@ -92,10 +92,6 @@ function syslog(){
 }
 
 alias venv='source venv/bin/activate'
-
-
-source ~/workbash
-source ~/MASTER/system/scripts/bash
 
 PATH=$PATH:$HOME/bin:$HOME/.dotfiles/bin
 

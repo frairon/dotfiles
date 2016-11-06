@@ -13,7 +13,7 @@ function setup(){
     echo "Sourcing $file in bash"
     check_append_to_file "$HOME/.bashrc" "source $file"
   done
-}
+} 
 
 
 case "$CMD" in

@@ -8,8 +8,10 @@
     destroyEmptyPanes: false
     disabledPackages: [
       "symbols-view"
+      "spell-check"
     ]
     openEmptyEditorOnStart: false
+    telemetryConsent: "limited"
     themes: [
       "atom-light-ui"
       "atom-light-syntax"
