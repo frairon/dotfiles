@@ -7,6 +7,6 @@ function setgopath(){
 }
 
 function setgoglobal(){
-  export GOPATH=HOME/golang-extras
+  export GOPATH=$HOME/golang-extras
   export PATH=$PATH:`pwd`/bin
 }

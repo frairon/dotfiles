@@ -1,5 +1,6 @@
 Sublime-Style-Column-Selection
 atom-ctags
+atom-typescript
 autocomplete-go
 autocomplete-python
 browse
@@ -8,10 +9,12 @@ dash
 dockerletion
 git-log
 go-config
+go-debug
 go-get
 go-outline
 go-plus
 go-rename
+godoc
 gofmt
 gometalinter-linter
 gorename
@@ -26,7 +29,7 @@ linter
 linter-shellcheck
 local-history
 my-theme-syntax
-navigator-godef
+navigator-go
 pdf-view
 python-autopep8
 python-indent

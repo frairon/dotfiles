@@ -18,3 +18,7 @@
   'ctrl-k ctrl-l': 'unset!'
   'alt-left': 'last-cursor-position:previous'
   'alt-right': 'last-cursor-position:next'
+
+'.platform-linux atom-text-editor:not(.mini)':
+  'alt-c': 'golang:godef'
+  'alt-x': 'golang:godef-return'

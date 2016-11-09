@@ -13,7 +13,7 @@ function install(){
 
 
 # to get a list of all installed packages, do
-# apm list -b -i -d
+# apm list -b -i -d | sed -r 's/^([^@]+)@.*$/\1/' > .atom/packages.txt
 
 
 function setup(){

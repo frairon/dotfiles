@@ -12,7 +12,7 @@ function setup(){
     check_append_to_file "$HOME/.bashrc" "source $file"
   done
 
-	for file in $HERE/bash.sh; do
+	for file in $HERE/bashprofile.sh; do
     echo "Sourcing $file in .profile"
     check_append_to_file "$HOME/.profile" "source $file"
   done

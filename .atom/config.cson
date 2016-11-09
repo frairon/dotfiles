@@ -10,6 +10,8 @@
       "symbols-view"
     ]
     openEmptyEditorOnStart: false
+    packagesWithKeymapsDisabled: []
+    telemetryConsent: "limited"
     themes: [
       "atom-light-ui"
       "atom-light-syntax"
@@ -20,6 +22,11 @@
     showInvisibles: true
   "exception-reporting":
     userId: "53f5306d-b3ef-b804-5b38-b4b0dcb858c5"
+  "go-outline":
+    showVariables: false
+  "goto-definition": {}
+  linter:
+    errorPanelHeight: 125
   minimap:
     plugins:
       bookmarks: true
@@ -28,5 +35,8 @@
       "find-and-replaceDecorationsZIndex": 0
       "minimap-autohide": true
       "minimap-autohideDecorationsZIndex": 0
+  "tree-view":
+    hideVcsIgnoredFiles: true
+    squashDirectoryNames: true
   welcome:
     showOnStartup: false
