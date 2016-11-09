@@ -2,7 +2,7 @@
 
 
 install: export CMD = install
-install:c
+install:
 	.atom/setup.sh
 
 setup: export CMD = setup
@@ -22,9 +22,9 @@ install-user-basics:
 
 
 install-dev-packages:
-	sudo apt-get install --yes python-pip git-core fabric zeal hamster-applet hamster-indicator
-	sudo pip install gkeyring
-
+	sudo apt-get install --yes python-pip git-core fabric zeal hamster-applet hamster-indicator geany python-gnomekeyring
+	sudo pip -H install gkeyring
+ 
 	$(info "The hamster-file is in .local/share/hamster-applet/. Link the database from dropbox or whatever")
 
 mdv:
@@ -37,9 +37,6 @@ mdv:
 remove-packages:
 	sudo apt-get install gnome-session-flashback
 	sudo apt-get purge --yes rhythmbox evolution
-
-
-install: install-syste-basics install-user-basics install-python-packages
 
 
 ui-customizations:

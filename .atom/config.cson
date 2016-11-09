@@ -8,9 +8,9 @@
     destroyEmptyPanes: false
     disabledPackages: [
       "symbols-view"
+      "spell-check"
     ]
     openEmptyEditorOnStart: false
-    packagesWithKeymapsDisabled: []
     telemetryConsent: "limited"
     themes: [
       "atom-light-ui"

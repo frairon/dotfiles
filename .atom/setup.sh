@@ -1,3 +1,5 @@
+#!/bin/bash
+
 
 HERE="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 FOLDERNAME=$(basename "$HERE")
@@ -22,6 +24,7 @@ function setup(){
 	success "Creating folder in $$HOME"
 	create_symlinks $HERE $LINK_FILES
 
+	sudo apt-get install shellcheck
 	# install packages
 	apm install --packages-file $HERE/packages.txt
 
