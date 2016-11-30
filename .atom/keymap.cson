@@ -22,3 +22,10 @@
 '.platform-linux atom-text-editor:not(.mini)':
   'alt-c': 'golang:godef'
   'alt-x': 'golang:godef-return'
+
+'atom-text-editor':
+  'alt-shift-d': 'golang:showdoc'
+
+
+'atom-text-editor':
+  'alt-d': 'editor:delete-to-end-of-word'
