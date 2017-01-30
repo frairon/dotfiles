@@ -1,10 +1,8 @@
 Sublime-Style-Column-Selection
 atom-ctags
 atom-typescript
-autocomplete-go
 autocomplete-python
 browse
-builder-go
 dash
 dockerletion
 git-log
