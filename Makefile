@@ -18,12 +18,12 @@ install-system-basics:
 	sudo apt-get install zsh
 
 install-user-basics:
-	sudo apt-get install --yes chromium-browser kate keepassx pepperflashplugin-nonfree zim vlc unison clementine
+	sudo apt-get install --yes chromium-browser kate keepassx zim vlc unison clementine
 
 
 install-dev-packages:
 	sudo apt-get install --yes python-pip git-core fabric zeal hamster-applet hamster-indicator geany python-gnomekeyring
-	sudo pip -H install gkeyring
+	pip install gkeyring
  
 	$(info "The hamster-file is in .local/share/hamster-applet/. Link the database from dropbox or whatever")
 

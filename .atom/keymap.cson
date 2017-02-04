@@ -2,22 +2,26 @@
   'ctrl-d': 'editor:delete-line'
   'ctrl-i': 'find-and-replace:select-next'
 
-'body':
-  'ctrl-k j': 'pane:split-down-and-copy-active-item'
-  'ctrl-k k': 'pane:split-up-and-copy-active-item'
-  'ctrl-k h': 'pane:split-left-and-copy-active-item'
-  'ctrl-k l': 'pane:split-right-and-copy-active-item'
-  'ctrl-k w': 'pane:close'
-  'ctrl-k ctrl-w': 'unset!'
-  'ctrl-k ctrl-k': 'window:focus-pane-above'
-  'ctrl-k ctrl-h': 'window:focus-pane-on-left'
-  'ctrl-k ctrl-l': 'window:focus-pane-on-right'
-  'ctrl-k ctrl-j': 'window:focus-pane-below'
+'.workspace':
+  'alt-w left': 'pane:split-left-and-copy-active-item'
+  'alt-w right': 'pane:split-right-and-copy-active-item'
+  'alt-w down': 'pane:split-down-and-copy-active-item'
+  'alt-w up': 'pane:split-up-and-copy-active-item'
+  'alt-w left': 'pane:split-left-and-copy-active-item'
+  'alt-w q': 'pane:close'
+  'alt-up': 'window:focus-pane-above'
+  'alt-left': 'window:focus-pane-on-left'
+  'alt-right': 'window:focus-pane-on-right'
+  'alt-down': 'window:focus-pane-below'
+  'ctrl-shift-i': 'window:toggle-dev-tools'
+
 
 'atom-workspace atom-text-editor':
   'ctrl-k ctrl-l': 'unset!'
-  'alt-left': 'last-cursor-position:previous'
-  'alt-right': 'last-cursor-position:next'
+  'alt-up': 'window:focus-pane-above'
+  'alt-left': 'window:focus-pane-on-left'
+  'alt-right': 'window:focus-pane-on-right'
+  'alt-down': 'window:focus-pane-below'
 
 '.platform-linux atom-text-editor:not(.mini)':
   'alt-c': 'golang:godef'
@@ -25,7 +29,4 @@
 
 'atom-text-editor':
   'alt-shift-d': 'golang:showdoc'
-
-
-'atom-text-editor':
   'alt-d': 'editor:delete-to-end-of-word'
