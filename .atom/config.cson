@@ -2,6 +2,8 @@
   "autocomplete-go": {}
   "autocomplete-plus":
     autoActivationDelay: 500
+  "autocomplete-python":
+    useKite: false
   "bracket-matcher":
     autocompleteBrackets: false
     autocompleteSmartQuotes: false
@@ -12,6 +14,7 @@
     disabledPackages: [
       "symbols-view"
       "spell-check"
+      "autocomplete-python"
     ]
     openEmptyEditorOnStart: false
     telemetryConsent: "limited"
@@ -21,7 +24,7 @@
     ]
   editor:
     fontFamily: "Fira Code"
-    fontSize: 11
+    fontSize: 13
     showInvisibles: true
     zoomFontWhenCtrlScrolling: false
   "exception-reporting":
@@ -41,7 +44,7 @@
       runTestsWithShortFlag: false
   "goto-definition": {}
   linter:
-    errorPanelHeight: 83
+    errorPanelHeight: 51
   minimap:
     plugins:
       bookmarks: true
@@ -50,6 +53,10 @@
       "find-and-replaceDecorationsZIndex": 0
       "minimap-autohide": true
       "minimap-autohideDecorationsZIndex": 0
+  "open-recent":
+    listDirectoriesAddedToProject: true
+    maxRecentFiles: 0
+    replaceNewWindowOnOpenDirectory: false
   "tree-view":
     hideVcsIgnoredFiles: true
     squashDirectoryNames: true
