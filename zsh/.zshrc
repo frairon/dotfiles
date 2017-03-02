@@ -3,12 +3,15 @@
 
 source $HOME/dotfiles/bash/tools.sh
 source $HOME/dotfiles/bash/dev.sh
-source $HOME/dotfiles/bash/secret.sh
+if test -e $HOME/dotfiles/bash/secret.sh
+then
+	source $HOME/dotfiles/bash/secret.sh
+fi
 source $HOME/dotfiles/golang/bash.sh
 
 
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/franz/.oh-my-zsh
+  export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
