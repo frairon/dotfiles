@@ -23,6 +23,7 @@ fail () {
 }
 
 function link_file () {
+
   local src=$1 dst=$2
 
   local overwrite='' backup='' skip=''
@@ -31,40 +32,35 @@ function link_file () {
   if [ -f "$dst" -o -d "$dst" -o -L "$dst" ]
   then
 
-    if [ "$overwrite_all" == "false" ] && [ "$backup_all" == "false" ] && [ "$skip_all" == "false" ]
+    local currentSrc="$(readlink $dst)"
+
+    if [ "$currentSrc" == "$src" ]
     then
 
-      local currentSrc="$(readlink $dst)"
+      skip=true;
 
-      if [ "$currentSrc" == "$src" ]
-      then
+    else
 
-        skip=true;
+      echo "File already exists: $dst ($(basename "$src")), what do you want to do?\n\
+      [s]kip, [S]kip all, [o]verwrite, [O]verwrite all, [b]ackup, [B]ackup all?"
+      read -n 1 action
 
-      else
-
-        user "File already exists: $dst ($(basename "$src")), what do you want to do?\n\
-        [s]kip, [S]kip all, [o]verwrite, [O]verwrite all, [b]ackup, [B]ackup all?"
-        read -n 1 action
-
-        case "$action" in
-          o )
-            overwrite=true;;
-          O )
-            overwrite_all=true;;
-          b )
-            backup=true;;
-          B )
-            backup_all=true;;
-          s )
-            skip=true;;
-          S )
-            skip_all=true;;
-          * )
-            ;;
-        esac
-
-      fi
+      case "$action" in
+        o )
+          overwrite=true;;
+        O )
+          overwrite_all=true;;
+        b )
+          backup=true;;
+        B )
+          backup_all=true;;
+        s )
+          skip=true;;
+        S )
+          skip_all=true;;
+        * )
+          ;;
+      esac
 
     fi
 
