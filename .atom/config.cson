@@ -10,6 +10,10 @@
     wrapSelectionsInBrackets: false
   core:
     audioBeep: false
+    customFileTypes:
+      "text.html.basic": [
+        "rt"
+      ]
     destroyEmptyPanes: false
     disabledPackages: [
       "symbols-view"
@@ -24,7 +28,7 @@
     ]
   editor:
     fontFamily: "Fira Code"
-    fontSize: 13
+    fontSize: 10
     showInvisibles: true
     zoomFontWhenCtrlScrolling: false
   "exception-reporting":
@@ -44,21 +48,13 @@
       runTestsWithShortFlag: false
   "goto-definition": {}
   linter:
-    errorPanelHeight: 51
-  minimap:
-    plugins:
-      bookmarks: true
-      bookmarksDecorationsZIndex: 0
-      "find-and-replace": true
-      "find-and-replaceDecorationsZIndex": 0
-      "minimap-autohide": true
-      "minimap-autohideDecorationsZIndex": 0
+    errorPanelHeight: 83
   "open-recent":
     listDirectoriesAddedToProject: true
     maxRecentFiles: 0
     replaceNewWindowOnOpenDirectory: false
   "tree-view":
-    hideVcsIgnoredFiles: true
+    alwaysOpenExisting: true
     squashDirectoryNames: true
   welcome:
     showOnStartup: false
