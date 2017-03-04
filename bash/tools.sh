@@ -16,7 +16,7 @@ esac
 alias cp='cp -i'
 
 # add home local paths to path
-export PATH=$PATH:$HOME/local/bin:$HOME/dotfiles/bin
+export PATH=$PATH:$HOME/local/bin:$HOME/dotfiles/bin:$HOME/bin:$HOME/.local/bin
 export PYTHONPATH=$PYTHONPATH:$HOME/local/lib/python
 
 function grephere() {
@@ -92,9 +92,6 @@ function syslog(){
 }
 
 alias venv='source venv/bin/activate'
-
-PATH=$PATH:$HOME/bin:$HOME/.dotfiles/bin
-
 
 function gitcfg(){
     if [ "$#" -lt "2" ] ; then

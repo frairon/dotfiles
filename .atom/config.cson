@@ -1,4 +1,25 @@
 "*":
+  "atom-beautify":
+    ejs:
+      indent_level: 2
+      indent_size: 2
+      space_before_conditional: false
+    general:
+      _analyticsUserId: "17f46383-3418-4c71-bde0-5aea841f143d"
+    html:
+      indent_size: 2
+      wrap_line_length: 120
+    js:
+      indent_size: 2
+      space_before_conditional: false
+    jsx:
+      default_beautifier: "JS Beautify"
+      indent_size: 2
+      space_before_conditional: false
+    python:
+      sort_imports: true
+    typescript:
+      indent_size: 2
   "autocomplete-go": {}
   "autocomplete-plus":
     autoActivationDelay: 500
@@ -18,7 +39,7 @@
     disabledPackages: [
       "symbols-view"
       "spell-check"
-      "autocomplete-python"
+      "python-autopep8"
     ]
     openEmptyEditorOnStart: false
     telemetryConsent: "limited"
