@@ -70,6 +70,9 @@
   "goto-definition": {}
   linter:
     errorPanelHeight: 83
+  "linter-jscs":
+    displayAs: "warning"
+    onlyConfig: true
   "open-recent":
     listDirectoriesAddedToProject: true
     maxRecentFiles: 0
