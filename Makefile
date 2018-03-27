@@ -19,6 +19,8 @@ install-system-basics:
 
 install-user-basics:
 	sudo apt-get install --yes chromium-browser kate keepassx zim vlc unison clementine
+	# more codecs for chromium 
+	sudo apt-get install --yes chromium-codecs-ffmpeg chromium-codecs-ffmpeg-extra
 
 
 install-dev-packages:
