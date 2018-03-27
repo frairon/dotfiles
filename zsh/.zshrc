@@ -93,6 +93,16 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export PATH=$PATH:$HOME/golang/bin
+export PATH=$PATH:$HOME/golang/bin:/home/franz/Downloads/appengine-java-sdk-1.9.54/bin
 
 setopt no_share_history
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/franz/Downloads/google-cloud-sdk/path.zsh.inc' ]; then source '/home/franz/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/home/franz/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then source '/home/franz/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/home/franz/.sdkman"
+[[ -s "/home/franz/.sdkman/bin/sdkman-init.sh" ]] && source "/home/franz/.sdkman/bin/sdkman-init.sh"

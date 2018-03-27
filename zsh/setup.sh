@@ -7,8 +7,9 @@ source $HERE/../scripts/common.sh
 
 function setup(){
 	echo "$FOLDERNAME: Setting linking config-files"
-
+	mkdir -p $HOME/.zsh/completions
   link_file "$HERE/.zshrc" "$HOME/.zshrc"
+  link_file "$HERE/_hub" "$HOME/.zsh/completions/_hub"
 }
 
 function install(){
