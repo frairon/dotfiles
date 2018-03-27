@@ -1,4 +1,5 @@
 "*":
+  "atom-autocomplete-php": {}
   "atom-beautify":
     ejs:
       indent_level: 2
@@ -20,6 +21,13 @@
       sort_imports: true
     typescript:
       indent_size: 2
+  "atom-ide-ui":
+    "atom-ide-diagnostics-ui":
+      showDirectoryColumn: true
+    "atom-ide-outline-view": {}
+    use: {}
+  "atom-package-deps":
+    ignored: []
   "autocomplete-go": {}
   "autocomplete-plus":
     autoActivationDelay: 500
@@ -39,9 +47,16 @@
     disabledPackages: [
       "symbols-view"
       "spell-check"
-      "python-autopep8"
+      "go-debug"
+      "github"
+      "linter"
+      "linter-ui-default"
+      "ide-go"
+      "ide-yaml"
     ]
+    excludeVcsIgnoredPaths: false
     openEmptyEditorOnStart: false
+    packagesWithKeymapsDisabled: []
     telemetryConsent: "limited"
     themes: [
       "atom-light-ui"
@@ -49,7 +64,8 @@
     ]
   editor:
     fontFamily: "Fira Code"
-    fontSize: 10
+    fontSize: 11
+    scrollPastEnd: true
     showInvisibles: true
     zoomFontWhenCtrlScrolling: false
   "exception-reporting":
@@ -57,28 +73,41 @@
   "go-outline":
     showVariables: false
   "go-plus":
+    autocomplete: {}
     config: {}
     currentPanelHeight: "4.613095238095238vh"
+    disabledBundledPackages: [
+      "go-debug"
+    ]
     format: {}
     get: {}
     lint: {}
+    panel:
+      displayMode: "closed"
     panelDisplayMode: "closed"
     test:
       focusPanelIfTestsFail: false
       runTestsOnSave: false
+      runTestsWithCoverage: false
       runTestsWithShortFlag: false
   "goto-definition": {}
-  linter:
-    errorPanelHeight: 83
+  linter: {}
   "linter-jscs":
     displayAs: "warning"
     onlyConfig: true
+  "linter-python":
+    executablePath: "/usr/local/bin/pylama"
+    ignoreCodes: "E501"
+    withPep8: true
+  "linter-ui-default":
+    panelHeight: 373
   "open-recent":
     listDirectoriesAddedToProject: true
     maxRecentFiles: 0
     replaceNewWindowOnOpenDirectory: false
   "tree-view":
     alwaysOpenExisting: true
+    hideVcsIgnoredFiles: true
     squashDirectoryNames: true
   welcome:
     showOnStartup: false
