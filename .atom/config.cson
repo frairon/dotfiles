@@ -40,6 +40,16 @@
   core:
     audioBeep: false
     customFileTypes:
+      "source.ini": [
+        ".buckconfig"
+        ".hgrc"
+      ]
+      "source.json": [
+        "BUCK.autodeps"
+      ]
+      "source.python": [
+        "BUCK"
+      ]
       "text.html.basic": [
         "rt"
       ]
