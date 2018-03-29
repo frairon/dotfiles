@@ -64,7 +64,6 @@
       "ide-go"
       "ide-yaml"
       "python-autopep8"
-      "tree-view"
     ]
     excludeVcsIgnoredPaths: false
     openEmptyEditorOnStart: false
