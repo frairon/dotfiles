@@ -1,6 +1,8 @@
 "*":
   "atom-autocomplete-php": {}
   "atom-beautify":
+    c:
+      default_beautifier: "clang-format"
     ejs:
       indent_level: 2
       indent_size: 2
@@ -47,6 +49,11 @@
       "source.json": [
         "BUCK.autodeps"
       ]
+      "source.makefile": [
+        "Makefile"
+        "Makefile.local"
+        "Makefile.helm.local"
+      ]
       "source.python": [
         "BUCK"
       ]
@@ -64,6 +71,7 @@
       "ide-go"
       "ide-yaml"
       "python-autopep8"
+      "language-gfm"
     ]
     excludeVcsIgnoredPaths: false
     openEmptyEditorOnStart: false
