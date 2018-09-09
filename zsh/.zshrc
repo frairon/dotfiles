@@ -106,3 +106,4 @@ if [ -f '/home/franz/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then sour
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/home/franz/.sdkman"
 [[ -s "/home/franz/.sdkman/bin/sdkman-init.sh" ]] && source "/home/franz/.sdkman/bin/sdkman-init.sh"
+
