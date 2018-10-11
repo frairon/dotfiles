@@ -60,7 +60,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git kubectl)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -93,7 +93,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export PATH=$PATH:$HOME/golang/bin:/home/franz/Downloads/appengine-java-sdk-1.9.54/bin
+export PATH=$PATH:$HOME/golang/bin:$HOME/Android/Sdk/tools/bin:$HOME/Android/android-ndk-r10e
 
 setopt no_share_history
 
