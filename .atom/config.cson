@@ -110,6 +110,8 @@
       runTestsWithShortFlag: false
   "goto-definition": {}
   linter: {}
+  "linter-flake8":
+    maxLineLength: 160
   "linter-jscs":
     displayAs: "warning"
     onlyConfig: true
