@@ -30,3 +30,7 @@
 'atom-text-editor':
   'alt-shift-d': 'golang:showdoc'
   'alt-d': 'editor:delete-to-end-of-word'
+
+'atom-text-editor[data-grammar~="go"]:not([mini])':
+  'ctrl-shift-a': 'golang:run-tests'
+  'ctrl-shift-x': 'golang:hide-coverage'
