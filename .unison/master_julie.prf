@@ -1,5 +1,5 @@
-root = /home/franz/MASTER
-root = ssh://julie//home/julie/MASTER
+root = /home/julie/MASTER
+root = ssh://frosi-quad/MASTER
 
 # do it fast even on vfat
 fastcheck = true
@@ -19,4 +19,3 @@ ignore = Path {lost+found}
 # not used since it doesnt work anyway
 # ignore = Path */.svn
 # ignore = Path */.history
-
