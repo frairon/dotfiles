@@ -24,6 +24,8 @@
     typescript:
       indent_size: 2
   "atom-ide-ui":
+    "atom-ide-code-format":
+      formatOnSave: true
     "atom-ide-diagnostics-ui":
       showDirectoryColumn: true
     "atom-ide-outline-view": {}
