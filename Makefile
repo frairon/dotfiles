@@ -19,13 +19,13 @@ install-system-basics:
 install-user-basics:
 	sudo apt-get install --yes chromium-browser keepassx zim vlc unison clementine chromium-codecs-ffmpeg-extra
 	sudo apt-get install terminator python-pip
-	
+
 install-keyring:
-	sudo add-apt-repository ppa:atareao/atareao 
+	sudo add-apt-repository ppa:atareao/atareao
 	sudo apt-get update
 	sudo apt-get install gkeyring
 	$(info "The hamster-file is in .local/share/hamster-applet/. Link the database from dropbox or whatever")
-	
+
 install-hub:
 	sudo add-apt-repository ppa:cpick/hub
 	sudo apt-get update
@@ -42,3 +42,7 @@ install-hub:
 # install cardbook
 # instructions here
 # https://posteo.de/en/help/how-do-I-synchronise-my-posteo-address-book-with-other-programs-or-devices
+
+# install docker
+# sudo apt-get install docker.io
+# usermod -aG docker franz
