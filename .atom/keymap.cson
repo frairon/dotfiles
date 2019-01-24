@@ -22,6 +22,8 @@
   'alt-left': 'window:focus-pane-on-left'
   'alt-right': 'window:focus-pane-on-right'
   'alt-down': 'window:focus-pane-below'
+  'alt-shift-y': 'cursor-history:next'
+  'alt-y': 'cursor-history:prev'
 
 '.platform-linux atom-text-editor:not(.mini)':
   'alt-c': 'golang:godef'
