@@ -10,25 +10,18 @@ function setup(){
 
   # check if the dropbox-entry exists in keyring, if not, add it.
   # save its ID to the tmp file anyway
-  gkeyring -n "db" -o "id" > /tmp/_bootstrap_keyId || \
-      gkeyring -n "db" --set > /tmp/_bootstrap_keyId
-
-  local KEY_ID=`cat /tmp/_bootstrap_keyId`
-  echo "Key ID is $KEY_ID"
-  rm /tmp/_bootstrap_keyId
-
   DROPBOX_PRIVATE_SRC=~/Dropbox/Private
   DROPBOX_PRIVATE_DIR=~/DropboxPrivate
   echo "Creating DropboxPrivate dir"
   mkdir -p $DROPBOX_PRIVATE_DIR
-
+  mkdir -p $HOME/.config/autostart/
 
   RUN_FILE=$HOME/.config/autostart/dropbox_private.desktop
   MOUNT_SCRIPT=$HOME/.mount_dropboxprivate.sh
   echo "Adding mount_script to startup applications"
   echo "#!/bin/bash
 
-gkeyring --id=$KEY_ID -o secret | encfs --stdinpass $DROPBOX_PRIVATE_SRC $DROPBOX_PRIVATE_DIR
+gkeyring -g -k dropbox | encfs --stdinpass $DROPBOX_PRIVATE_SRC $DROPBOX_PRIVATE_DIR
 
     " > $MOUNT_SCRIPT
     chmod +x $MOUNT_SCRIPT
