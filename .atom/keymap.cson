@@ -39,3 +39,4 @@
 
 'body':
   'ctrl-q': 'unset!'
+  'ctrl-shift-W': 'unset!'
