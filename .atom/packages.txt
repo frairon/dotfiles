@@ -20,6 +20,8 @@ go-plus
 go-rename
 go-signature-statusbar
 hyperclick
+language-latex
 language-protobuf
+language-terraform
 sort-lines
 
