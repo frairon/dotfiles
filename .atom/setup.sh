@@ -31,11 +31,6 @@ function setup(){
 	mkdir -p $HOME/$FOLDERNAME
 	success "Creating folder in $$HOME"
 	create_symlinks $HERE $LINK_FILES
-
-	sudo apt-get install shellcheck
-	# install packages
-	apm install --packages-file $HERE/packages.txt
-
 }
 
 

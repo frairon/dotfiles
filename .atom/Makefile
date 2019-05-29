@@ -16,10 +16,10 @@ installpackages:
 
 setup:
 	echo ".atom: Setting up..."
-	mkdir -p $HOME/.atom
+	mkdir -p ${HOME}/.atom
 	success "Creating folder in $$HOME"
 	create_symlinks ${CURDIR} $LINK_FILES
 
-	sudo apt-get install shellcheck
+	# sudo apt-get install shellcheck
 	# install packages
 	apm install --packages-file ${CURDIR}/packages.txt

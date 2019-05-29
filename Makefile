@@ -46,3 +46,30 @@ install-hub:
 # install docker
 # sudo apt-get install docker.io
 # usermod -aG docker franz
+
+# AURs used
+# git clone https://aur.archlinux.org/slack-desktop.git
+# git clone https://aur.archlinux.org/keepassx2.git
+# git clone https://aur.archlinux.org/dropbox.git
+# git clone https://aur.archlinux.org/gnome-session-properties.git
+# git clone https://aur.archlinux.org/gkeyring.git
+
+
+arch-setup:
+	sudo pacman -S chromium gkeyring atom terminator zim htop encfs meld otf-fira-code make terminator binutils patch base-devel hub
+
+
+arch-settings:
+	# alt-tab only switches between windows in current workspace:
+	gsettings set org.gnome.shell.app-switcher current-workspace-only true
+
+
+docker:
+	sudo pacman -S docker
+	sudo gpasswd -a franz docker
+	# do a reboot (login somehow didn't work)
+
+	# enable docker service at system start
+	sudo systemctl enable docker
+	# start it now
+	sudo systemctl start docker

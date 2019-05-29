@@ -21,7 +21,7 @@ function setup(){
   echo "Adding mount_script to startup applications"
   echo "#!/bin/bash
 
-gkeyring -g -k dropbox | encfs --stdinpass $DROPBOX_PRIVATE_SRC $DROPBOX_PRIVATE_DIR
+gkeyring --name dropbox -o secret | encfs --stdinpass $DROPBOX_PRIVATE_SRC $DROPBOX_PRIVATE_DIR
 
     " > $MOUNT_SCRIPT
     chmod +x $MOUNT_SCRIPT

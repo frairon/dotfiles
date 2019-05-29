@@ -1,9 +1,8 @@
 #!/bin/bash
 
 
-hamster-indicator &
-thunderbird &
-chromium-browser &
+evolution &
+chromium &
 Telegram &
 spotify &
 slack &
