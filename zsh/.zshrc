@@ -108,3 +108,5 @@ if [ -f '/home/franz/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then sour
 export SDKMAN_DIR="/home/franz/.sdkman"
 [[ -s "/home/franz/.sdkman/bin/sdkman-init.sh" ]] && source "/home/franz/.sdkman/bin/sdkman-init.sh"
 
+
+export ELECTRON_TRASH=gio
