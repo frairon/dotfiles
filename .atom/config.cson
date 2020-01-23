@@ -20,6 +20,7 @@
       indent_size: 2
       space_before_conditional: false
     python:
+      default_beautifier: "black"
       sort_imports: true
     typescript:
       indent_size: 2
@@ -66,7 +67,6 @@
     disabledPackages: [
       "symbols-view"
       "spell-check"
-      "go-debug"
       "github"
       "linter"
       "linter-ui-default"
@@ -74,6 +74,7 @@
       "ide-yaml"
       "python-autopep8"
       "language-gfm"
+      "go-debug"
     ]
     excludeVcsIgnoredPaths: false
     openEmptyEditorOnStart: false
@@ -93,8 +94,10 @@
     userId: "53f5306d-b3ef-b804-5b38-b4b0dcb858c5"
   "go-outline":
     showVariables: false
+    viewMode: "package"
   "go-plus":
-    autocomplete: {}
+    autocomplete:
+      proposeBuiltins: false
     config: {}
     currentPanelHeight: "4.613095238095238vh"
     disabledBundledPackages: [

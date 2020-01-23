@@ -6,3 +6,4 @@ chromium &
 Telegram &
 spotify &
 slack &
+signal-desktop &

@@ -1,0 +1,6 @@
+[Unit]
+Description=backup
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/rsync /home/franz/work -a /mnt/backup
