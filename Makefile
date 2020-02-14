@@ -41,6 +41,7 @@ remove-packages:
 	sudo apt-get purge --yes rhythmbox evolution
 
 
+
 ui-customizations:
 	echo "UI-Buttons to right side"
 	gsettings set org.gnome.desktop.wm.preferences button-layout 'menu:minimize,maximize,close'
@@ -64,7 +65,13 @@ MEDIA=/media/julie
 
 backup-master-gabi:
 	test -d ${MEDIA}/Gabi-Franz && rsync ${HOME}/MASTER/ -a --info=progress2 --exclude="lost+found" --delete ${MEDIA}/Gabi-Franz
-backup-bilder:
+backup-bilder-gabi:
 	test -d ${MEDIA}/Siggi-Bilder && test -d ${MEDIA}/Gabi-Bilder && rsync ${MEDIA}/Siggi-Bilder/ -a --info=progress2 --exclude=".Trash-*" --exclude="lost+found" --delete ${MEDIA}/Gabi-Bilder
+backup-bilder-backup:
+	test -d ${MEDIA}/Siggi-Bilder && test -d "${MEDIA}/Backup Bilder" && rsync ${MEDIA}/Siggi-Bilder/ -a --info=progress2 --exclude=".Trash-*" --exclude="lost+found" --delete "${MEDIA}/Backup Bilder"
+backup-bilder:
+	test -d ${MEDIA}/Siggi-Bilder && test -d "${MEDIA}/Bilder" && rsync ${MEDIA}/Siggi-Bilder/ -a --info=progress2 --exclude=".Trash-*" --exclude="lost+found" --delete "${MEDIA}/Bilder"
+backup-master-backup:
+	test -d "${MEDIA}/Backup Franz" && rsync ${HOME}/MASTER/ -a --info=progress2 --exclude="lost+found" --delete "${MEDIA}/Backup Franz/MASTER"
 backup-master-hannelore:
 	test -d ${MEDIA}/Hannelore && rsync ${HOME}/MASTER/ -a --info=progress2 --delete --exclude="lost+found" ${MEDIA}/Hannelore/MASTER
