@@ -93,7 +93,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export PATH=$PATH:$HOME/golang/bin:$HOME/Android/Sdk/tools/bin:$HOME/Android/android-ndk-r10e
+export PATH=$PATH:$HOME/golang/bin:$HOME/Android/Sdk/tools/bin:$HOME/Android/android-ndk-r10e:/home/franz/flutter/bin
+
 
 setopt no_share_history
 

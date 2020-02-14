@@ -1,0 +1,4 @@
+#!/bin/sh
+# delete all remote branches that have been merged
+
+git push origin --delete `git branch -r --merged | grep -v '^*' | grep -v 'master' | grep -v 'develop' | awk -F'origin/' '{print $2" " }' | tr -d '\n'`

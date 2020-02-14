@@ -1,11 +1,11 @@
 #!/bin/bash
 
-PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\W\[\033[00m\]\$ '
+PS1='${debian_chroot:+($debian_chroot)}\[\033[01;34m\]\W\[\033[00m\]\$ '
 
 # If this is an xterm set the title to user@host:dir
 case "$TERM" in
 xterm*|rxvt*)
-    PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD/$HOME/~}\007"'
+    PROMPT_COMMAND='echo -ne "\033]0;${PWD/$HOME/~}\007"'
     ;;
 *)
     ;;
@@ -144,4 +144,9 @@ function gitprune(){
   echo "TODO: so we need to check if they're not merged and then ask the user if he really wants to delete them anyway with -D"
   git fetch --prune
   git branch -r | awk '{print $1}' | egrep -v -f /dev/fd/0 <(git branch -vv | grep origin) | awk '{print $1}' | xargs git branch -d
+}
+
+
+function pdftkd(){
+  docker run --user $(id --user):$(id --group) -v $(pwd):/work mnuessler/pdftk $@
 }
