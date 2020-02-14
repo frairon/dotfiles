@@ -99,12 +99,12 @@ export PATH=$PATH:$HOME/golang/bin:$HOME/Android/Sdk/tools/bin:$HOME/Android/and
 setopt no_share_history
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/home/franz/Downloads/google-cloud-sdk/path.zsh.inc' ]; then source '/home/franz/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f '$HOME/Downloads/google-cloud-sdk/path.zsh.inc' ]; then source '$HOME/Downloads/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '/home/franz/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then source '/home/franz/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+if [ -f '$HOME/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then source '$HOME/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="/home/franz/.sdkman"
-[[ -s "/home/franz/.sdkman/bin/sdkman-init.sh" ]] && source "/home/franz/.sdkman/bin/sdkman-init.sh"
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
