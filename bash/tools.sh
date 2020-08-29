@@ -16,7 +16,7 @@ esac
 alias cp='cp -i'
 
 # add home local paths to path
-export PATH=$PATH:$HOME/local/bin:$HOME/dotfiles/bin:$HOME/bin:$HOME/.local/bin
+export PATH=$PATH:$HOME/local/bin:$HOME/dotfiles/bin:$HOME/bin:$HOME/.local/bin:$HOME/VSCode-linux-x64/bin
 export PYTHONPATH=$PYTHONPATH:$HOME/local/lib/python
 
 function grephere() {
@@ -148,5 +148,5 @@ function gitprune(){
 
 
 function pdftkd(){
-  docker run --user $(id --user):$(id --group) -v $(pwd):/work mnuessler/pdftk $@
+  docker run --user $(id --user):$(id --group) -v "$(pwd):/work" mnuessler/pdftk $@
 }

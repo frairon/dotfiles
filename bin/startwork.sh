@@ -4,6 +4,6 @@
 evolution &
 chromium &
 Telegram &
-spotify &
-slack &
+spotify  &
+slack  &
 signal-desktop &

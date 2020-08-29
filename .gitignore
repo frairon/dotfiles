@@ -1,3 +1,4 @@
 
 # secret files will not be added as they could contain sensitive information
 **/secret.*
+.history
