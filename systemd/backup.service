@@ -3,4 +3,4 @@ Description=backup
 
 [Service]
 Type=oneshot
-ExecStart=/usr/bin/rsync /home/franz/work -a /mnt/backup
+ExecStart=/usr/bin/rsync /home/franz/work -v -a --exclude "gocode/pkg" /mnt/backup

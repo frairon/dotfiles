@@ -6,4 +6,4 @@ OnCalendar=hourly
 Persistent=false
 
 [Install]
-WantedBy=timers.target
+WantedBy=basic.target
