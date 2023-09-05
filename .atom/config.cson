@@ -85,7 +85,7 @@
     ]
   editor:
     fontFamily: "Fira Code"
-    fontSize: 11
+    fontSize: 10
     scrollPastEnd: true
     showInvisibles: true
     zoomFontWhenCtrlScrolling: false

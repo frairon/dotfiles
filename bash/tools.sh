@@ -16,7 +16,7 @@ esac
 alias cp='cp -i'
 
 # add home local paths to path
-export PATH=$PATH:$HOME/local/bin:$HOME/dotfiles/bin:$HOME/bin:$HOME/.local/bin:$HOME/VSCode-linux-x64/bin
+export PATH=$PATH:$HOME/local/bin:$HOME/dotfiles/bin:$HOME/bin:$HOME/.local/bin:$HOME/VSCode-linux-x64/bin:/home/franz/.local/share/gem/ruby/3.0.0/bin
 export PYTHONPATH=$PYTHONPATH:$HOME/local/lib/python
 
 function grephere() {
@@ -136,6 +136,10 @@ extract () {
     else
         echo "'$1' is not a valid file"
     fi
+}
+
+function riff(){
+	bluetoothctl connect 98:67:2E:74:FF:3E
 }
 
 
